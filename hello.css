@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Gafata|Faster+One);
+
+h1{
+    color: darkred;
+    /*background-color: hsla(58, 100%, 50%, 0.5); /*vierde is tot 1 , en houd de transparantie bij */
+    background: -moz-linear-gradient(-45deg, yellow , gold);
+    opacity: 0.5;
+    text-indent: 1.5em;
+
+
+}
+body {
+
+    color: yellow;
+    text-align: center;
+    line-height: 2em;
+    font-size: 120%;
+    background:url("bigstock-Mt-Fuji-with-fall-colors-in-j-48491102.jpg");
+    background-size: cover;
+}
+abbr{
+    color: aquamarine
+
+}
+tr:nth-child(even) {
+    background-color: darkgreen;
+    color:blue;
+
+}
+tr:nth-child(odd) {
+    background-color: darkblue;
+    color:green;
+}
+tr:first-child {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+tr:nth-child(3) td:nth-child(1) {
+    color: darkred;
+}
+th:nth-child(2){
+    color: darkred;
+}
+table{
+    text-align: center;
+    background:url("blue_sky.jpg");
+    margin: auto; /*Nu doet hij auto op top, right, bottom en dna left*/
+    width: 40%;
+    height: 40%;
+
+}
+svg{
+    background:transparent ;
+    float: left;
+    -moz-transform: rotate(360deg);
+    -moz-transition: transform 5s;
+}
+
+#Extra {
+    /*font-family: "Faster One";*/
+    font-variant: small-caps;
+    word-spacing: 1.1em;
+    font-size: 200%;
+    text-shadow: 1em 1em 0.1em black;
+
+
+
+}
+.random{
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    background:url("Slowpoke.png"), url("Slowpoke.png");
+    background-size: 2rem,2rem;
+    background-repeat: no-repeat;
+    background-position: right,left;
+
+}
+
+#titles
+{
+    position: absolute;
+    width: 18em;
+    height: 50em;
+    bottom: 0;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 350%;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(300px) rotateX(25deg);
+}
+
+#titles:after
+{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 60%;
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+
+#titlecontent
+{
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 4s infinite;
+    text-indent: 2em;
+    font-size: 150%;
+}
+
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
